@@ -25,16 +25,16 @@ COMPLETION_WAITING_DOTS="true"
 #aliases
 
 #EDIT
-alias efire='nvim /home/adb/.mozilla/firefox/7xfdmsnj.default/chrome/userChrome.css'
+#alias efire='nvim /home/adb/.mozilla/firefox/7xfdmsnj.default/chrome/userChrome.css'
 alias cfire='cd /home/adb/.mozilla/firefox/7xfdmsnj.default/chrome/'
-alias exres='nvim ~/.Xresources'
-alias epoly='nvim ~/.config/polybar/config'
-alias ezsh='nvim ~/.zshrc'
-alias evim='nvim ~/.config/nvim/init.vim'
-alias etmux='nvim ~/.tmux.conf'
-alias ebsp='nvim ~/.config/bspwm/bspwmrc'
-alias esxh='nvim ~/.config/sxhkd/sxhkdrc'
-alias ekit='nvim ~/.config/kitty/kitty.conf'
+#alias exres='nvim ~/.Xresources'
+#alias epoly='nvim ~/.config/polybar/config'
+#alias ezsh='nvim ~/.zshrc'
+#alias evim='nvim ~/.config/nvim/init.vim'
+#alias etmux='nvim ~/.tmux.conf'
+#alias ebsp='nvim ~/.config/bspwm/bspwmrc'
+#alias esxh='nvim ~/.config/sxhkd/sxhkdrc'
+#alias ekit='nvim ~/.config/kitty/kitty.conf'
 
 ##TESTING gnuSTOW
 
@@ -64,12 +64,13 @@ alias upytdl='python ~/stuff/projects/ytdl/ytdl.py'
 alias rem='sudo pacman -R'
 alias xrdr='xrdb ~/.Xresources'
 alias vim='nvim'
-alias config='/usr/bin/git --git-dir=/home/adb/.cfg/ --work-tree=/home/adb'
-alias pushcfg='git push github master; git push gitlab master'
+alias dot='/usr/bin/git --git-dir=/home/adb/dotfiles/.git --work-tree=/home/adb/dotfiles'
+alias pushcfg='dot push github master; dot push gitlab master'
 alias 251='cd ~/stuff/sum18/251/scripts/'
 alias 212='cd ~/stuff/sum18/212/scripts/'
 alias 300='cd ~/stuff/sum18/300'
 alias back='feh --bg-scale'
+alias cheat=' ~/stuff/scripts/cht.sh python list | bat'
 
 export EDITOR=nvim
 
@@ -83,7 +84,7 @@ function edots() {
     # generic one $EDITOR $(find $HOME/dotfiles -path $HOME/dotfiles/.git -prune -o -type f | fzf)
     # requires fzf
     dotf=$(find $HOME/dotfiles -path $HOME/dotfiles/.git -prune -o -type f | fzf)
-    [[ -z ${dotf} ]] && echo || nvim $HOME/dotfiles/$dotf
+    [[ -z ${dotf} ]] && echo || nvim $dotf
 }
 
 (cat ~/.cache/wal/sequences &)
