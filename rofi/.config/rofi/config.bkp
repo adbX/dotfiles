@@ -1,0 +1,7 @@
+rofi.color-enabled: true
+rofi.width: 800
+rofi.padding: 22
+rofi.font: FuraMono\ Nerd\ Font Regular 11
+rofi.bw: 3
+rofi.separator-style: solid
+rofi.hide-scrollbar: true

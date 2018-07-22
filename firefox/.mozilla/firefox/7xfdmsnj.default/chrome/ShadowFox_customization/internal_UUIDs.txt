@@ -1,0 +1,12 @@
+{d7742d87-e61d-4b78-b8a1-b469842139fa}=909e2410-8f4e-4693-a191-99530a30b459
+{7a7a4a92-a2a0-41d1-9fd7-1e92480d612d}=abd9ee62-7f33-4a98-9ef1-96d0fcefc5de
+iridium@particlecore.github.io=0d4c5a6c-5f20-4a76-b1d0-5d6ec8875b52
+webcompat@mozilla.org=12cc57fa-51b3-4efd-8b79-3d0e190edefe
+screenshots@mozilla.org=6fbe0ac9-27e9-43cc-aa09-4a752a01365c
+treestyletab@piro.sakura.ne.jp=10852fc4-c7ae-4802-a6df-f78823626a2e
+support@lastpass.com=25c12c4e-b561-46ee-9a05-dffc6cc7f33d
+{cdb8acd8-90c1-456d-add2-608ceeeb15bc}=0e0ec0ff-ecc8-4fee-abb7-086e6ac0dfc2
+extension@one-tab.com=b2d97085-d7c8-4f35-b7b5-43785ec2d3a9
+uBlock0@raymondhill.net=d2b17009-bbd0-44ef-a294-3ff3de403c47
+jid1-xUfzOsOFlzSOXg@jetpack=a9e8b75f-c413-4f59-bb0f-6623562f1bdf
+{00000f2a-7cde-4f20-83ed-434fcb420d71}=ffe00bd3-d578-4d5e-b4c5-6c552d6d9a1c

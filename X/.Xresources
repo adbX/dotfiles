@@ -1,0 +1,60 @@
+! -----------------------------------------------------------------------------
+! File: gruvbox-dark.xresources
+! Description: Retro groove colorscheme generalized
+! Author: morhetz <morhetz@gmail.com>
+! Source: https://github.com/morhetz/gruvbox-generalized
+! Last Modified: 6 Sep 2014
+! -----------------------------------------------------------------------------
+
+! hard contrast: *background: #1d2021
+*background: #1d2021
+! soft contrast: *background: #32302f
+*foreground: #ebdbb2
+! Black + DarkGrey
+*color0:  #282828
+*color8:  #928374
+! DarkRed + Red
+*color1:  #cc241d
+*color9:  #fb4934
+! DarkGreen + Green
+*color2:  #98971a
+*color10: #b8bb26
+! DarkYellow + Yellow
+*color3:  #d79921
+*color11: #fabd2f
+! DarkBlue + Blue
+*color4:  #458588
+*color12: #83a598
+! DarkMagenta + Magenta
+*color5:  #b16286
+*color13: #d3869b
+! DarkCyan + Cyan
+*color6:  #689d6a
+*color14: #8ec07c
+! LightGrey + White
+*color7:  #a89984
+*color15: #ebdbb2
+!URxvt.font: xft:Iosevka:size=10:style=Regular, \
+        !xft:DejaVuSansMono Nerd Font:size=10:style=Regular, \
+        !xft:Material Design Icons:pixelsize=10;2, \
+	!xft:MesloLGSDZ Nerd Font:size=10:style=RegularForPowerline
+
+!!urxvt.letterSpace:.5
+
+!!URxvt.scrollBar:                false
+!!URxvt.internalBorder:           25
+!!URxvt.url-launcher:             chromium
+
+!! transparency
+!!urxvt*depth: 32
+!!urxvt*background: [85]base00
+!!URxvt.perl-ext-common:	default,matcher,resize-font
+
+!! resize-font
+!!URxvt.resize-font.smaller:	C-j
+!!URxvt.resize-font.bigger:	C-k
+
+rofi.font: FuraCode Nerd Font Regular 10
+rofi.fullscreen: true
+
+
