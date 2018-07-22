@@ -65,7 +65,7 @@ alias rem='sudo pacman -R'
 alias xrdr='xrdb ~/.Xresources'
 alias vim='nvim'
 alias config='/usr/bin/git --git-dir=/home/adb/.cfg/ --work-tree=/home/adb'
-alias pushcfg='config push github master; config push gitlab master'
+alias pushcfg='git push github master; git push gitlab master'
 alias 251='cd ~/stuff/sum18/251/scripts/'
 alias 212='cd ~/stuff/sum18/212/scripts/'
 alias 300='cd ~/stuff/sum18/300'
@@ -82,8 +82,8 @@ function zshalias()
 function edots() {
     # generic one $EDITOR $(find $HOME/dotfiles -path $HOME/dotfiles/.git -prune -o -type f | fzf)
     # requires fzf
-    dotf=$(find $HOME/dotfiles -path $HOME/dotfiles/.git -prune -o -type f | cut -c26- | fzf)
-    [[ -z ${dotf} ]] && echo || $EDITOR $HOME/dotfiles/$dotf
+    dotf=$(find $HOME/dotfiles -path $HOME/dotfiles/.git -prune -o -type f | fzf)
+    [[ -z ${dotf} ]] && echo || nvim $HOME/dotfiles/$dotf
 }
 
 (cat ~/.cache/wal/sequences &)
