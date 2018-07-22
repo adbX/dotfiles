@@ -73,6 +73,7 @@ alias back='feh --bg-scale'
 alias cheat=' ~/stuff/scripts/cht.sh python list | bat'
 
 export EDITOR=nvim
+export POLY_BACK="80$(xrdb -query | head -n 1 | grep -o '#......' | cut -c 2-)"
 
 #for using aliases in vim
 function zshalias()
@@ -81,8 +82,6 @@ function zshalias()
 }
 
 function edots() {
-    # generic one $EDITOR $(find $HOME/dotfiles -path $HOME/dotfiles/.git -prune -o -type f | fzf)
-    # requires fzf
     dotf=$(find $HOME/dotfiles -path $HOME/dotfiles/.git -prune -o -type f | fzf)
     [[ -z ${dotf} ]] && echo || nvim $dotf
 }

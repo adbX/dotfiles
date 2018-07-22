@@ -55,15 +55,15 @@ font-4 = icons\-in\-terminal:size=14:style=Regular;3
 ;font-2 = Font Awesome:pixelsize=15;0
 ;font-4 = Wuncon Siji:pixelsize=15;1
 
-modules-left = date ranger
+modules-left = date
 modules-center = i3
 modules-right = volume wlan memory cpu temperature battery
 
 scroll-up = i3wm-wsnext
 scroll-down = i3wm-wsprev
 
-background = #801d2021
-foreground = #bdae93
+background = ${env:POLY_BACK}
+foreground = ${colors.foreground} 
 
 [module/i3]
 type = internal/i3
@@ -76,8 +76,8 @@ enable-scroll=true
 wrapping-scroll=true
 fuzzy-match=true
 
-label-unfocused-foreground = #afafaf
-label-focused-foreground = #c5a9f9
+label-unfocused-foreground = ${colors.foreground-alt}
+label-focused-foreground = ${colors.foreground}
 label-urgent-foreground = #ff0000
 
 [module/date]
@@ -153,7 +153,7 @@ ramp-signal-4=
 ramp-signal-5= 
 
 [module/volume]
-type=internal/volume
+type=internal/alsa
 format-volume=<ramp-volume><label-volume>
 label-muted=
 ramp-volume-0=
