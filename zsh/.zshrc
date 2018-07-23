@@ -8,7 +8,7 @@ __git_files () {
 
 export ZSH=/home/adb/.oh-my-zsh
 
-ZSH_THEME="sorin"
+ZSH_THEME="classyTouch"
 
 plugins=(
   git
@@ -46,7 +46,7 @@ alias gcadd='config add -u'
 
 alias dox='~/stuff/scripts/teensy'
 alias l='exa'
-alias ls='exa -al'
+alias ls='exa -GghB --group-directories-first'
 alias als='ls'
 alias goct='octave --gui &'
 alias update-grub='grub-mkconfig -o /boot/grub/grub.cfg'

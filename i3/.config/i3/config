@@ -17,7 +17,7 @@ bindsym $mod+Return exec kitty
 bindsym $mod+c kill
 
 # start rofi
-bindsym $mod+d exec --no-startup-id rofi -theme full_blur -show run
+bindsym $mod+d exec --no-startup-id rofi -show run
 
 # flameshot
 bindsym $mod+ctrl+r exec flameshot gui -p ~/stuff/screenshots
@@ -226,11 +226,12 @@ client.background       #ffffff
 
 
 ##############################--startup--#####################################
-exec_always --no-startup-id sh $HOME/.config/polybar/launch.sh
 exec_always feh --bg-scale ~/.config/wall.png
-exec_always compton --config ~/.compton.conf -fb
-exec_always autorandr -c
-exec_always --no-startup-id ~/stuff/scripts/blurme &
+exec_always --no-startup-id compton --config ~/.compton.conf -fb
+#exec_always autorandr -c
+exec_always ~/stuff/scripts/blurme &
+#exec_always --no-startup-id sh $HOME/.config/polybar/launch.sh
+exec_always sh ~/.config/polybar/launch.sh 
 
 ##############################--exit--#####################################
 set $Locker exec sh ~/.i3/i3lock-fancy-multimonitor/lock -n -b=3x4 

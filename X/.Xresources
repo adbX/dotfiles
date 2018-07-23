@@ -1,4 +1,5 @@
-! -----------------------------------------------------------------------------
+!
+!-----------------------------------------------------------------------------
 ! File: gruvbox-dark.xresources
 ! Description: Retro groove colorscheme generalized
 ! Author: morhetz <morhetz@gmail.com>
@@ -54,7 +55,10 @@
 !!URxvt.resize-font.smaller:	C-j
 !!URxvt.resize-font.bigger:	C-k
 
+rofi.separator-style: solid
 rofi.font: FuraCode Nerd Font Regular 10
-rofi.fullscreen: true
-
-
+rofi.highlight: bold;
+rofi.scrollbar: true;
+rofi.color-enabled: true;
+rofi.padding: 6;
+rofi.width: 600;

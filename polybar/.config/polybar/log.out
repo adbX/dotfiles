@@ -1,0 +1,21 @@
+Bars launched...
+conky: Syntax error (/home/adb/.config/polybar/conky_wrapper:1: syntax error near 'tm') while reading config file. 
+conky: Assuming it's in old syntax and attempting conversion.
+conky: desktop window (1ee) is root window
+conky: window type - panel
+conky: drawing to created window (0x1800002)
+conky: forked to background, pid is 20265
+
+conky: defining struts
+polybar|warn:  Termination signal received, shutting down...
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Unexpected EOF while reading header)
+polybar|error: module/i3: Failed to reconnect socket (reason: Failed to read header from socket 0x11: errno 104 (Connection reset by peer))
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Unexpected EOF while reading header)
+polybar|error: module/i3: Failed to reconnect socket (reason: Failed to connect to i3: errno 111 (Connection refused))
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Failed to read header from socket 0x11: errno 22 (Invalid argument))
+polybar|error: module/i3: Failed to reconnect socket (reason: Failed to connect to i3: errno 111 (Connection refused))
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Failed to read header from socket 0x11: errno 22 (Invalid argument))
+polybar|error: module/i3: Failed to reconnect socket (reason: Failed to connect to i3: errno 111 (Connection refused))
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Failed to read header from socket 0x11: errno 22 (Invalid argument))
+polybar|warn:  Termination signal received, shutting down...
+conky: received SIGINT or SIGTERM to terminate. bye!
