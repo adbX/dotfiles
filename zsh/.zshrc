@@ -74,6 +74,7 @@ alias cheat=' ~/stuff/scripts/cht.sh python list | bat'
 
 export EDITOR=nvim
 export POLY_BACK="80$(xrdb -query | head -n 1 | grep -o '#......' | cut -c 2-)"
+export XDG_CONFIG_HOME="$HOME/.config"
 
 #for using aliases in vim
 function zshalias()

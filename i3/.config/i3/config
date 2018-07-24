@@ -230,8 +230,8 @@ exec_always feh --bg-scale ~/.config/wall.png
 exec_always --no-startup-id compton --config ~/.compton.conf -fb
 #exec_always autorandr -c
 exec_always ~/stuff/scripts/blurme &
-#exec_always --no-startup-id sh $HOME/.config/polybar/launch.sh
-exec_always sh ~/.config/polybar/launch.sh 
+exec_always --no-startup-id sh $HOME/.config/polybar/launch.sh
+#exec_always sh ~/.config/polybar/launch.sh 
 
 ##############################--exit--#####################################
 set $Locker exec sh ~/.i3/i3lock-fancy-multimonitor/lock -n -b=3x4 
