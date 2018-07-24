@@ -22,7 +22,7 @@ monitor-fallback = ${env:MONITOR:DP-0}
 
 ;SUPER important for centering
 override-redirect = true
-wm-restack = i3
+wm-restack = bspwm
 
 width = 90%
 height = 25
@@ -44,6 +44,7 @@ font-1 = FantasqueSansMono Nerd Font:size=15:style=Regular;3
 font-2 = Material Design Icons:pixelsize=15;2
 font-3 = Material Icons:style=Regular:size=13;3
 font-4 = icons\-in\-terminal:size=14:style=Regular;3
+font-5 = M+ 2c:style=bold:pixelsize=12;1
 
 ;font-0 = Hack:size=12:style=Regular;2
 ;font-1 = Weather Icons:style=Regular:size=13;2
@@ -51,16 +52,15 @@ font-4 = icons\-in\-terminal:size=14:style=Regular;3
 ;font-1 = Font Awesome:pixelsize=15;0
 ;font-0 = TerminessTTF Nerd Font Mono:size=11:style=Regular
 ;font-1 = DejaVuSansMono Nerd Font:size=12:style=Regular
-;font-1 = M+ 2c:style=bold:pixelsize=12;1
 ;font-2 = Font Awesome:pixelsize=15;0
 ;font-4 = Wuncon Siji:pixelsize=15;1
 
 modules-left = date
-modules-center = i3
+modules-center = bspwm
 modules-right = volume wlan memory cpu temperature battery
 
-scroll-up = i3wm-wsnext
-scroll-down = i3wm-wsprev
+scroll-up = bspwm-desknext
+scroll-down = bspwm-deskprev
 
 background = ${env:POLY_BACK}
 foreground = ${colors.foreground} 
@@ -79,6 +79,20 @@ fuzzy-match=true
 label-unfocused-foreground = ${colors.foreground-alt}
 label-focused-foreground = ${colors.foreground}
 label-urgent-foreground = #ff0000
+
+[module/bspwm]
+type=internal/bspwm
+
+ws-icon-default = 
+ws-icon-0 = 1
+ws-icon-1 = 2
+ws-icon-2 = 3
+ws-icon-3 = 4
+ws-icon-4 = 5
+ws-icon-5 = 6
+ws-icon-6 = 7
+ws-icon-7 = 8
+ws-icon-8 = 9
 
 [module/date]
 type = internal/date
