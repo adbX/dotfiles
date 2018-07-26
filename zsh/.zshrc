@@ -7,10 +7,12 @@ __git_files () {
 }
 
 export ZSH=/home/adb/.oh-my-zsh
+export PATH=$HOME/.gem/ruby/2.5.0/bin:$PATH
 
 ZSH_THEME="classyTouch"
 
 plugins=(
+  history-substring-search
   git
   vi-mode
   zsh-autosuggestions
@@ -25,16 +27,15 @@ COMPLETION_WAITING_DOTS="true"
 #aliases
 
 #EDIT
-#alias efire='nvim /home/adb/.mozilla/firefox/7xfdmsnj.default/chrome/userChrome.css'
+alias efire='nvim /home/adb/.mozilla/firefox/7xfdmsnj.default/chrome/userChrome.css'
 alias cfire='cd /home/adb/.mozilla/firefox/7xfdmsnj.default/chrome/'
-#alias exres='nvim ~/.Xresources'
-#alias epoly='nvim ~/.config/polybar/config'
-#alias ezsh='nvim ~/.zshrc'
-#alias evim='nvim ~/.config/nvim/init.vim'
-#alias etmux='nvim ~/.tmux.conf'
-#alias ebsp='nvim ~/.config/bspwm/bspwmrc'
-#alias esxh='nvim ~/.config/sxhkd/sxhkdrc'
-#alias ekit='nvim ~/.config/kitty/kitty.conf'
+alias exres='nvim ~/.Xresources'
+alias epoly='nvim ~/.config/polybar/config'
+alias ezsh='nvim ~/.zshrc'
+alias evim='nvim ~/.config/nvim/init.vim'
+alias ebsp='nvim ~/.config/bspwm/bspwmrc'
+alias esxh='nvim ~/.config/sxhkd/sxhkdrc'
+alias ekit='nvim ~/.config/kitty/kitty.conf'
 
 ##TESTING gnuSTOW
 
@@ -44,7 +45,7 @@ alias gpu='git push origin master'
 alias gccom='config commit'
 alias gcadd='config add -u'
 
-alias dox='~/stuff/scripts/teensy'
+alias teensy='~/stuff/scripts/teensy'
 alias l='exa'
 alias ls='exa -GghB --group-directories-first'
 alias als='ls'
@@ -87,11 +88,19 @@ function edots() {
     [[ -z ${dotf} ]] && echo || nvim $dotf
 }
 
+wals() {
+    wal -n -i "$@"
+    feh --bg-tile "$(< "${HOME}/.cache/wal/wal")"
+}
+
 (cat ~/.cache/wal/sequences &)
 cat ~/.cache/wal/sequences
 source ~/.cache/wal/colors-tty.sh
 
-source "$HOME/.vim/bundle/gruvbox/gruvbox_256palette.sh"
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
+
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.oh-my-zsh/custom/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
 #source /usr/share/zsh-theme-powerlevel9k/powerlevel9k.zsh-theme
