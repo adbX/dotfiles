@@ -22,13 +22,13 @@ monitor-fallback = ${env:MONITOR:DP-0}
 
 ;SUPER important for centering
 override-redirect = true
-wm-restack = i3
+wm-restack = bspwm
 
 width = 90%
 height = 25
 offset-x = 5%
 offset-y = 8px
-radius = 5.0
+radius = 7.0
 fixed-center = true
 
 padding-left = 1.5
@@ -62,7 +62,7 @@ modules-right = volume wlan memory cpu temperature battery
 scroll-up = bspwm-desknext
 scroll-down = bspwm-deskprev
 
-background = ${env:POLY_BACK}
+background = #801d2021
 foreground = ${colors.foreground} 
 
 [module/i3]

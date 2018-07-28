@@ -74,7 +74,7 @@ alias back='feh --bg-scale'
 alias cheat=' ~/stuff/scripts/cht.sh python list | bat'
 
 export EDITOR=nvim
-export POLY_BACK="80$(xrdb -query | head -n 1 | grep -o '#......' | cut -c 2-)"
+export POLY_BACK="#80$(xrdb -query | head -n 1 | grep -o '#......' | cut -c 2-)"
 export XDG_CONFIG_HOME="$HOME/.config"
 
 #for using aliases in vim
@@ -103,4 +103,5 @@ bindkey '^[[B' history-substring-search-down
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.oh-my-zsh/custom/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
+source /usr/share/nvm/init-nvm.sh
 #source /usr/share/zsh-theme-powerlevel9k/powerlevel9k.zsh-theme

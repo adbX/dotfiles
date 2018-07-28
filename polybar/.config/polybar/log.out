@@ -1,16 +1,13 @@
 Bars launched...
-conky: Syntax error (/home/adb/.config/polybar/conky_wrapper:1: syntax error near 'tm') while reading config file. 
-conky: Assuming it's in old syntax and attempting conversion.
-polybar|warn:  Monitor "HDMI-0" not found, reverting to fallback "DP-0"
-conky: desktop window (1ca) is root window
-conky: window type - panel
-conky: drawing to created window (0x1000002)
-conky: forked to background, pid is 27636
-
-conky: defining struts
+polybar|error: Failed to restack bar window
 polybar|warn:  Termination signal received, shutting down...
-polybar|warn:  Monitor "HDMI-0" not found, reverting to fallback "DP-0"
-conky: received SIGHUP or SIGUSR1. reloading the config file.
-conky: Syntax error (/home/adb/.config/polybar/conky_wrapper:1: syntax error near 'tm') while reading config file. 
-conky: Assuming it's in old syntax and attempting conversion.
-conky: can't open display: :0
+polybar|error: Failed to restack bar window
+polybar|warn:  Termination signal received, shutting down...
+polybar|error: Failed to restack bar window
+polybar|warn:  Termination signal received, shutting down...
+polybar|error: Failed to restack bar window
+polybar|warn:  Termination signal received, shutting down...
+polybar|error: Failed to restack bar window
+polybar|warn:  Termination signal received, shutting down...
+polybar|error: Failed to restack bar window
+polybar|warn:  Termination signal received, shutting down...

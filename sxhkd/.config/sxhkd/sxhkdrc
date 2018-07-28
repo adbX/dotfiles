@@ -18,6 +18,10 @@ super + Escape
 # bspwm hotkeys
 #
 
+# reload config
+super + shift + r
+	~/.config/bspwm/bspwmrc
+
 # quit bspwm normally
 super + alt + Escape
 	bspc quit
