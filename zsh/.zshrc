@@ -72,6 +72,7 @@ alias 212='cd ~/stuff/sum18/212/scripts/'
 alias 300='cd ~/stuff/sum18/300'
 alias back='feh --bg-scale'
 alias cheat=' ~/stuff/scripts/cht.sh python list | bat'
+alias dox='make -C ~/stuff/projects/qmk_firmware ergodox_ez:adb; teensy-loader-cli -v -w -mmcu=atmega32u4 ~/stuff/projects/qmk_firmware/ergodox_ez_adb.hex'
 
 export EDITOR=nvim
 export POLY_BACK="#80$(xrdb -query | head -n 1 | grep -o '#......' | cut -c 2-)"
