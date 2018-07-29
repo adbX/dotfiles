@@ -35,25 +35,6 @@
 ! LightGrey + White
 *color7:  #a89984
 *color15: #ebdbb2
-!URxvt.font: xft:Iosevka:size=10:style=Regular, \
-        !xft:DejaVuSansMono Nerd Font:size=10:style=Regular, \
-        !xft:Material Design Icons:pixelsize=10;2, \
-	!xft:MesloLGSDZ Nerd Font:size=10:style=RegularForPowerline
-
-!!urxvt.letterSpace:.5
-
-!!URxvt.scrollBar:                false
-!!URxvt.internalBorder:           25
-!!URxvt.url-launcher:             chromium
-
-!! transparency
-!!urxvt*depth: 32
-!!urxvt*background: [85]base00
-!!URxvt.perl-ext-common:	default,matcher,resize-font
-
-!! resize-font
-!!URxvt.resize-font.smaller:	C-j
-!!URxvt.resize-font.bigger:	C-k
 
 rofi.separator-style: solid
 rofi.font: FuraCode Nerd Font Regular 10
