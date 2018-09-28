@@ -65,6 +65,18 @@ scroll-down = bspwm-deskprev
 background = #801d2021
 foreground = ${colors.foreground} 
 
+[module/spotify]
+type = custom/script
+exec = ~/stuff/scripts/spotifycl status
+tail = true
+format-foreground = ${colors.foreground-alt}
+
+click-right = xte 'key XF86AudioPlay'
+click-left = xte 'key XF86AudioPlay'
+click-middle = "source ~/.secrets; spotifycl save_remove"
+scroll-up = xte 'key XF86AudioNext'
+scroll-down = xte 'key XF86AudioPrev'
+
 [module/i3]
 type = internal/i3
 
@@ -87,7 +99,7 @@ type=internal/bspwm
 type = internal/date
 interval = 1.0
 
-date = %b(%m)%e(%a)
+date = %b%e (%a)
 time = %I:%M
 
 label =  %time% %date% 

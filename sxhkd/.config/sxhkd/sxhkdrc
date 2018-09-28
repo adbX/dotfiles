@@ -3,8 +3,16 @@
 #
 
 # terminal emulator
-super + Return
+ctrl + shift + Return
 	kitty
+
+# flameshot
+ctrl+alt+r
+	flameshot gui -p ~/stuff/screenshots
+
+# firefox
+super + c
+	firefox-beta-bin
 
 # program launcher
 super + d
@@ -20,7 +28,7 @@ super + Escape
 
 # reload config
 super + shift + r
-	~/.config/bspwm/bspwmrc
+	sh ~/.config/bspwm/bspwmrc
 
 # quit bspwm normally
 super + alt + Escape
@@ -71,8 +79,8 @@ super + {_,shift + }c
 	bspc node -f {next,prev}.local
 
 # focus the next/previous desktop in the current monitor
-super + bracket{left,right}
-	bspc desktop -f {prev,next}.local
+#super + bracket{left,right}
+	#bspc desktop -f {prev,next}.local
 
 # focus the last node/desktop
 super + {grave,Tab}
@@ -88,6 +96,12 @@ super + {o,i}
 super + {_,shift + }{1-9,0}
 	bspc {desktop -f,node -d} '^{1-9,10}'
 
+# move to next monitor
+super + {n,m}
+	desk=`bspc query -D -d focused`; \
+	bspc desktop -m {prev,next}; \
+	bspc monitor -f {prev,next}; \
+	bspc desktop -f $desk
 #
 # preselect
 #
@@ -123,3 +137,19 @@ super + alt + shift + {h,j,k,l}
 # move a floating window
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+#
+# volume
+#
+
+#Raises volume
+XF86AudioRaiseVolume
+	amixer set Master 2%+
+
+# Lowers volume
+XF86AudioLowerVolume
+    amixer set Master 2%-
+
+# Mutes
+# XF86AudioMute
+	amixer set Master toggle

@@ -1,5 +1,7 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+#export PATH=$HOME/bin:/usr/local/bin:$PATH
+export SPACK_ROOT="/home/adb/stuff/ncsa/spack"
+. $SPACK_ROOT/share/spack/setup-env.sh
 
 #fix for tab completion on git that uses 100%cpu
 __git_files () {
@@ -8,6 +10,7 @@ __git_files () {
 
 export ZSH=/home/adb/.oh-my-zsh
 export PATH=$HOME/.gem/ruby/2.5.0/bin:$PATH
+export PATH=$HOME/stuff/scripts:$PATH
 
 ZSH_THEME="classyTouch"
 
@@ -21,6 +24,7 @@ plugins=(
 
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern)
 source $ZSH/oh-my-zsh.sh
+source $HOME/export_spotify.sh
 
 COMPLETION_WAITING_DOTS="true"
 
@@ -47,7 +51,7 @@ alias gcadd='config add -u'
 
 alias teensy='~/stuff/scripts/teensy'
 alias l='exa'
-alias ls='exa -GghB --group-directories-first'
+alias ls='exa -l -s newest --group-directories-first'
 alias als='ls'
 alias goct='octave --gui &'
 alias update-grub='grub-mkconfig -o /boot/grub/grub.cfg'

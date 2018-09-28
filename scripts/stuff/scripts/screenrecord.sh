@@ -23,10 +23,10 @@ while getopts "p:f:n:" opt; do
 						;;
 				n) name=$OPTARG
 						if [ $name = "default" ]; then
-								XYPOS=":1+0,0"
+								XYPOS=":0+0,0"
 								SCREENSIZE="1920x1080"
 						elif [ $name = "clark" ]; then
-								XYPOS=":1+1920,0"
+								XYPOS=":0+1920,0"
 								SCREENSIZE="2560x1440"
 						else
 								echo "no more profiles yet lol"

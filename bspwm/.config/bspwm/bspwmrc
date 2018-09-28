@@ -1,7 +1,7 @@
 #! /bin/sh
 
 sxhkd &
-~/autostart.sh
+sh ~/autostart.sh
 
 # source the colors.
 . "${HOME}/.cache/wal/colors.sh"
