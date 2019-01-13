@@ -8,11 +8,11 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'myusuf3/numbers.vim'
 Plugin 'miyakogi/conoline.vim'
 Plugin 'mileszs/ack.vim'
-Plugin 'kovetskiy/sxhkd-vim'
+"Plugin 'kovetskiy/sxhkd-vim'
 Plugin 'dylanaraps/wal.vim'
 Plugin 'yuttie/comfortable-motion.vim'
 Plugin 'mattn/emmet-vim'
-Plugin 'JuliaEditorSupport/julia-vim'
+"Plugin 'JuliaEditorSupport/julia-vim'
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-surround'
@@ -41,7 +41,7 @@ call vundle#end()
 set relativenumber
 
 "theming
-colorscheme wal 
+"colorscheme wal 
 "transparent background wth gruvbox theme
 set background=dark
 hi Normal ctermbg=none
