@@ -5,7 +5,7 @@ __git_files () {
 
 export ZSH=/Users/adb/.oh-my-zsh
 
-ZSH_THEME="classyTouch"
+ZSH_THEME="agnoster"
 
 plugins=(
   history-substring-search
@@ -59,3 +59,5 @@ bindkey '^[[B' history-substring-search-down
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
