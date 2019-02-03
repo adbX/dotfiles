@@ -35,10 +35,9 @@ alias byebye='shutdown now'
 alias ra='ranger'
 alias rcd='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"; rm -d $HOME/.rangerdir'
 alias v='nvim'
+alias vim='nvim'
 alias rezsh='source ~/.zshrc'
 alias upug='brew update; brew upgrade'
-alias vim='nvim'
-alias cheat=' ~/stuff/scripts/cht.sh python list | bat'
 
 export EDITOR=nvim
 
