@@ -11,16 +11,16 @@ call plug#begin('~/.vim/plugged')
 Plug 'jiangmiao/auto-pairs'
 Plug 'miyakogi/conoline.vim'
 Plug 'yuttie/comfortable-motion.vim'
-Plug 'scrooloose/nerdtree'
-Plug 'majutsushi/tagbar'
+"Plug 'scrooloose/nerdtree'
+"Plug 'majutsushi/tagbar'
 Plug 'mgee/lightline-bufferline'
 Plug 'itchyny/lightline.vim'
 Plug 'danro/rename.vim'
 Plug 'luochen1990/rainbow'
-Plug 'easymotion/vim-easymotion'
+"Plug 'easymotion/vim-easymotion'
 Plug 'airblade/vim-gitgutter'
 Plug 'nathanaelkane/vim-indent-guides'
-Plug 'ctrlpvim/ctrlp.vim'
+"Plug 'ctrlpvim/ctrlp.vim'
 "Plug 'mattn/emmet-vim'
 "Plug 'dylanaraps/wal.vim'
 "Plug 'VundleVim/Vundle.vim'
@@ -65,8 +65,9 @@ set ts=4 sw=4
 set showmatch
 set incsearch
 set ignorecase smartcase
+let g:conoline_auto_enable = 1
 "set termguicolors
-"set clipboard=unnamedplus
+set clipboard=unnamed
 "set shell=zsh
 
 """Plug settings
@@ -82,13 +83,15 @@ set showtabline=2
 let g:vim_markdown_folding_disabled = 1
 
 "open nerdtree when new file
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+""autocmd StdinReadPre * let s:std_in=1
+""autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 "nerdtree shortcut
-map <C-w> :NERDTreeToggle<CR>
+""map <C-w> :NERDTreeToggle<CR>
 
 "rainbow brackets
 let g:rainbow_active = 1 "0 if you want to enable it later via :RainbowToggle
 
-"easymotion bindings
-map <Leader> <Plug>(easymotion-prefix)
+"Conoline
+
+""easymotion bindings
+""map <Leader> <Plug>(easymotion-prefix)
